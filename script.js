@@ -1,0 +1,1 @@
+axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=imperial&appid=43d49819fe899466b30d41716359a5fd`)
