@@ -4,30 +4,34 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <script src="script.js" defer></script>
   <title>Weather App</title>
 </head>
 
 <body>
   <div class="card">
     <form>
-      <input type="searchCity" id="searchCity" placeholder="Fullerton">
+      <input type="text" class="search-bar" placeholder="Fullerton">
       <button id="search" type="submit">Search City</button>
     </form>
   </div>
-  <div class="weather">
-    <h2 class="city"></h2>
-    <div class="date"></div>
-    <div class="uvIndex"></div>
-    <div class="windSpeed"></div>
-    <div class="conditions"></div>
+  <div class="weather loading">
+    <h2 class="city">Weather in Irvine</h2>
+    <h1 class="temp">51°F</h1>
+    <div class="flex">
+      <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+      <div class="description">Cloudy</div>
+    </div>
+    <div class="humidity">Humidity: 60%</div>
+    <div class="wind">Wind speed: 6.2 km/h</div>
   </div>
 
 
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
 
-  <script src="script.js"></script>
+ 
 </body>
 
 </html>
