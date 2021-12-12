@@ -24,10 +24,9 @@ document.getElementById('search').addEventListener('click', event => {
       document.getElementById('wind').innerHTML = `
         <div>Wind: ${weather.wind.speed}km/h</div>
       `
-      // document.getElementById('UVI').innerHTML = `
-        <div>${}</div>
-      // `
       console.log(res.data)
     })
 })
 
+document.getElementById('UVI')
+// uv index: https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid=f3f2b60e59009428800ffe45c8e776e4
