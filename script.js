@@ -19,13 +19,13 @@ document.getElementById('search').addEventListener('click', event => {
         <h2>${weather.main.temp}°F</h2>
       `
       document.getElementById('humidity').innerHTML = `
-        <div>${weather.}<div>
+        <div>Humidity: ${weather.main.humidity}%</div>
       `
-      // document.getElementById('wind').innerHTML = `
-
-      // `
-      // document.getElementById('').innerHTML = `
-
+      document.getElementById('wind').innerHTML = `
+        <div>Wind: ${weather.wind.speed}km/h</div>
+      `
+      // document.getElementById('UVI').innerHTML = `
+        <div>${}</div>
       // `
       console.log(res.data)
     })
