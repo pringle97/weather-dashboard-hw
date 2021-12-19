@@ -1,9 +1,3 @@
-// const api_key = 'f3f2b60e59009428800ffe45c8e776e4'
-//search button function showing weather conditions of searched city
-//display city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
-//UV index changes colors based on severity of weather
-
-
 //creating search function to search weather by city name
 let myStoredSearches = JSON.parse(localStorage.getItem('myStoredSearches')) || []
 for (let i = 0; i < myStoredSearches.length; i++) {
@@ -12,8 +6,6 @@ for (let i = 0; i < myStoredSearches.length; i++) {
     <button class="searchRecent">${myStoredSearches[i]}</button>
   `
 }
-
-
 
 document.getElementById('search').addEventListener('click', event => {
   event.preventDefault()
