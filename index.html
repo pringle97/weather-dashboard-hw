@@ -49,7 +49,7 @@
     myStoredSearches.push(cityName)
     localStorage.setItem('myStoredSearches', JSON.stringify(myStoredSearches))
 
-    axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=imperial&appid=f3f2b60e59009428800ffe45c8e776e4`)
+    axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=imperial&appid=f3f2b60e59009428800ffe45c8e776e4`)
       .then(res => {
         const weather = res.data
         document.getElementById('city').innerHTML = `
